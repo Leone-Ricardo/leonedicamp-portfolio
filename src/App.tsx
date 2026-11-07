@@ -1,37 +1,63 @@
-import { Reveal } from '@/components/ui/Reveal'
+import { Button } from '@/components/ui/Button'
+import { Badge } from '@/components/ui/Badge'
+import { SectionTitle } from '@/components/ui/SectionTitle'
+import { FloatingInput } from '@/components/ui/FloatingInput'
+import { AccordionItem } from '@/components/ui/Accordion'
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Bloco visível imediatamente */}
-      <section className="container-site min-h-screen flex flex-col justify-center items-center text-center gap-6">
-        <h1 className="text-5xl md:text-7xl font-bold text-gradient-white">
-          Role para baixo <span className="text-red-600">↓</span>
-        </h1>
-        <p className="text-gray-400">As seções abaixo surgem ao entrar na viewport.</p>
-      </section>
+      <div className="container-site py-20 space-y-16">
+        {/* Botões */}
+        <section>
+          <SectionTitle
+            eyebrow="Componentes"
+            title={<>Botões <span className="text-red-600">UI</span></>}
+            description="Três variantes, três tamanhos."
+          />
+          <div className="mt-8 flex flex-wrap gap-4 justify-center">
+            <Button variant="primary">Primário</Button>
+            <Button variant="secondary">Secundário</Button>
+            <Button variant="ghost">Ghost</Button>
+            <Button variant="primary" size="sm">Small</Button>
+            <Button variant="primary" size="lg">Large</Button>
+          </div>
+        </section>
 
-      {/* Blocos que animam ao aparecer */}
-      {[1, 2, 3, 4, 5].map((n) => (
-        <Reveal key={n} delay={n * 80}>
-          <section className="container-site py-32 text-center">
-            <h2 className="text-4xl md:text-6xl font-bold text-gradient-white">
-              Bloco <span className="text-red-600">{n}</span>
-            </h2>
-            <p className="text-gray-400 mt-4">Revelado com sucesso ✨</p>
-          </section>
-        </Reveal>
-      ))}
+        {/* Badges */}
+        <section className="text-center">
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Badge variant="red">🔥 Novo</Badge>
+            <Badge variant="outline">Cliente verificado</Badge>
+            <Badge variant="white">+150 vendas</Badge>
+          </div>
+        </section>
 
-      {/* Bloco final com botão de reset */}
-      <section className="container-site py-32 text-center">
-        <button
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-3 shadow-brutal transition-colors"
-        >
-          Voltar ao topo ↑
-        </button>
-      </section>
+        {/* Formulário */}
+        <section className="max-w-md mx-auto space-y-6">
+          <FloatingInput label="Nome completo" type="text" />
+          <FloatingInput label="WhatsApp" type="tel" />
+          <FloatingInput as="textarea" label="Detalhes do projeto" />
+          <Button variant="primary" className="w-full">Enviar</Button>
+        </section>
+
+        {/* FAQ */}
+        <section className="max-w-3xl mx-auto">
+          <AccordionItem
+            question="Quanto tempo leva para entregar um projeto?"
+            answer="Depende da complexidade, mas projetos de landing page ficam entre 2 e 4 semanas."
+            defaultOpen
+          />
+          <AccordionItem
+            question="Você cobra mensalidade?"
+            answer="Não. O modelo é pagamento único pela entrega, com suporte opcional."
+          />
+          <AccordionItem
+            question="Atende fora do Rio de Janeiro?"
+            answer="Sim, atendo remotamente todo o Brasil."
+          />
+        </section>
+      </div>
     </div>
   )
 }

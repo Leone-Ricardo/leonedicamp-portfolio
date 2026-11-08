@@ -1,6 +1,7 @@
 import { Navbar } from '@/components/layout/Navbar'
 import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
+import { CaseStudy } from '@/components/sections/CaseStudy'
 
 function App() {
   return (
@@ -9,10 +10,8 @@ function App() {
       <main>
         <Hero />
         <About />
+        <CaseStudy />
         {/* Placeholders das próximas seções */}
-        <section id="casos" className="container-site py-32 text-center">
-          <p className="text-gray-500">Próxima seção: Estudo de Caso</p>
-        </section>
         <section id="solucoes" className="container-site py-32 text-center">
           <p className="text-gray-500">Próxima seção: Soluções</p>
         </section>

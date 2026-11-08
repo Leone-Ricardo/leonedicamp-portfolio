@@ -3,6 +3,7 @@ import { Hero } from '@/components/sections/Hero'
 import { About } from '@/components/sections/About'
 import { CaseStudy } from '@/components/sections/CaseStudy'
 import { Ecosystem } from '@/components/sections/Ecosystem'
+import { TechStack } from '@/components/sections/TechStack'
 
 function App() {
   return (
@@ -13,10 +14,8 @@ function App() {
         <About />
         <CaseStudy />
         <Ecosystem />
+        <TechStack />
         {/* Placeholders das próximas seções */}
-        <section id="stack" className="container-site py-32 text-center">
-          <p className="text-gray-500">Próxima seção: Stack</p>
-        </section>
         <section id="faq" className="container-site py-32 text-center">
           <p className="text-gray-500">Próxima seção: FAQ</p>
         </section>

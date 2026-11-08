@@ -4,6 +4,7 @@ import { About } from '@/components/sections/About'
 import { CaseStudy } from '@/components/sections/CaseStudy'
 import { Ecosystem } from '@/components/sections/Ecosystem'
 import { TechStack } from '@/components/sections/TechStack'
+import { FAQ } from '@/components/sections/FAQ'
 
 function App() {
   return (
@@ -15,10 +16,8 @@ function App() {
         <CaseStudy />
         <Ecosystem />
         <TechStack />
-        {/* Placeholders das próximas seções */}
-        <section id="faq" className="container-site py-32 text-center">
-          <p className="text-gray-500">Próxima seção: FAQ</p>
-        </section>
+        <FAQ />
+        {/* Placeholder da próxima seção */}
         <section id="contato" className="container-site py-32 text-center">
           <p className="text-gray-500">Próxima seção: Contato</p>
         </section>

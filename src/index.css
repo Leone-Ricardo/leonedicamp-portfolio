@@ -42,6 +42,35 @@
     font-feature-settings: "cv11", "ss01";
   }
 
+  /* ============================================
+     CURSORES DE INTERAÇÃO (UX)
+     ============================================ */
+  
+  /* Garante cursor de mãozinha em QUALQUER elemento clicável */
+  button,
+  [role="button"],
+  a,
+  select,
+  summary,
+  [type="button"],
+  [type="submit"],
+  [type="reset"],
+  label[for] {
+    cursor: pointer;
+  }
+
+  /* Cursor de "não permitido" para elementos desabilitados */
+  button:disabled,
+  [disabled],
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  /* ============================================
+     DEMAIS AJUSTES GLOBAIS
+     ============================================ */
+
   /* Seleção de texto com cor da marca */
   ::selection {
     @apply bg-red-600 text-white;

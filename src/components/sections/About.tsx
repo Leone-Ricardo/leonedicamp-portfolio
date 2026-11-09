@@ -34,11 +34,11 @@ export function About() {
                 {/* Moldura neo-brutalista */}
                 <div className="absolute inset-0 translate-x-4 translate-y-4 border-2 border-red-600" />
                 <img
-                  src={leonePhoto}
-                  alt="Leone DiCamp, Desenvolvedor Full Stack"
-                  className="relative w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  loading="lazy"
-                />
+  src={leonePhoto}
+  alt="Leone DiCamp, Desenvolvedor Full Stack"
+  className="relative w-full h-auto object-cover transition-all duration-700 grayscale-0 lg:grayscale lg:hover:grayscale-0"
+  loading="lazy"
+/>
                 {/* Badge sobreposto */}
                 <div className="absolute -bottom-4 -right-4 bg-red-600 text-white px-4 py-2 font-bold text-sm tracking-wider uppercase">
                   Full Stack

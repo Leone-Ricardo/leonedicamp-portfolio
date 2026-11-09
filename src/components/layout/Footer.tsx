@@ -58,15 +58,15 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li>
                 <a
-                  href="mailto:contato@leonedicamp.com"
+                  href="leoneonix688@gmail.com"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  contato@leonedicamp.com
+                  leoneonix688@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://wa.me/5521999999999"
+                  href="https://wa.me/5521967156104"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -76,7 +76,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/Leone-Ricardo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
@@ -86,7 +86,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/leone-ricardo-68b553232/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"

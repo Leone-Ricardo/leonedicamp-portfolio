@@ -4,11 +4,11 @@ export type Lead = {
   details: string
 }
 
-export type SubmitLeadResponse = {
-  success: boolean
+export type SubmitLeadSuccess = {
+  success: true
   message: string
-  id?: string
-  timestamp?: string
+  id: string
+  timestamp: string
 }
 
 export type SubmitLeadError = {
@@ -16,3 +16,5 @@ export type SubmitLeadError = {
   message: string
   fieldErrors?: Partial<Record<keyof Lead, string>>
 }
+
+export type SubmitLeadResponse = SubmitLeadSuccess | SubmitLeadError
